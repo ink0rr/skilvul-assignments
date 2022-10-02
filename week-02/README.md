@@ -91,6 +91,44 @@ Scope adalah konsep dalam flow data variabel. Scope menentukan suatu variable bi
   console.log(message) // ReferenceError: message is not defined
   ```
 
+## Built-in Method & Properties
+
+- ### String
+
+  Beberapa built-in method dan properties yang bisa digunakan untuk tipe data string adalah sebagai berikut:
+
+  - `length` - panjang string
+  - `toUpperCase()` - mengubah string menjadi huruf kapital
+  - `toLowerCase()` - mengubah string menjadi huruf kecil
+  - `charAt(index)` - mengambil karakter pada index tertentu
+  - `indexOf(string)` - mencari index dari string tertentu
+  - `substring(start, end)` - mengambil substring dari index start sampai index end
+  - `split(separator)` - memecah string menjadi array berdasarkan separator
+  - `trim()` - menghapus spasi di awal dan akhir string
+
+- ### Number
+
+  Beberapa built-in method dan properties yang bisa digunakan untuk tipe data number adalah sebagai berikut:
+
+  - `toFixed(n)` - mengubah number menjadi string dengan n angka di belakang koma
+  - `toString()` - mengubah number menjadi string
+  - `toExponential(n)` - mengubah number menjadi string dengan notasi eksponensial
+  - `toPrecision(n)` - mengubah number menjadi string dengan n digit angka
+
+- ### Math
+
+  Beberapa built-in method dan properties yang bisa digunakan untuk object math adalah sebagai berikut:
+
+  - `Math.PI` - nilai pi
+  - `Math.abs(x)` - nilai absolut dari x
+  - `Math.ceil(x)` - pembulatan ke atas dari x
+  - `Math.floor(x)` - pembulatan ke bawah dari x
+  - `Math.round(x)` - pembulatan ke angka terdekat dari x
+  - `Math.max(x, y)` - nilai terbesar dari x dan y
+  - `Math.min(x, y)` - nilai terkecil dari x dan y
+  - `Math.pow(x, y)` - x pangkat y
+  - `Math.random()` - angka random dari 0 sampai 1
+
 ## DOM
 
 Document Object Model atau DOM adalah interface yang disediakan oleh browser untuk mengakses dan memanipulasi HTML menggunakan JavaScript.

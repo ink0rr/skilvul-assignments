@@ -1,7 +1,7 @@
 import { getMovies } from "./lib/movies.js"
 import { getParams } from "./utils/getParams.js"
 
-const params = getParams(window.location.search)
+const params = getParams(location.search)
 
 document.getElementById("search").addEventListener("submit", (event) => {
   event.preventDefault()

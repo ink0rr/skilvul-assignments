@@ -1,4 +1,4 @@
-import { getMovies } from "./api/movies.js"
+import { getMovies } from "./lib/movies.js"
 import { getParams } from "./utils/getParams.js"
 
 const params = getParams(window.location.search)

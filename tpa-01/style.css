@@ -1,0 +1,100 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+    "Droid Sans", "Helvetica Neue", sans-serif;
+  background: #fff;
+  text-rendering: optimizeLegibility;
+  max-width: 800px;
+  margin: 20px auto;
+  line-height: 1.4;
+  padding: 0 8px;
+}
+
+h1,
+h2,
+h3,
+h4,
+a {
+  color: black;
+  font-weight: 600;
+}
+h1 {
+  font-size: 2.2em;
+}
+h2 {
+  font-weight: 400;
+}
+a:hover {
+  color: #6e6e6e;
+}
+p {
+  text-align: justify;
+}
+
+hr {
+  background-color: rgba(230, 230, 230, 1);
+  height: 1px;
+  border: 0;
+  margin: 0;
+}
+
+ul > li > ul {
+  padding-inline-start: 2.5ch;
+}
+
+header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+nav {
+  display: flex;
+  gap: 20px;
+}
+nav a {
+  text-decoration: none;
+}
+
+main {
+  padding-top: 4rem;
+  max-width: 65%;
+}
+
+.profile {
+  width: 192px;
+  border-radius: 50%;
+}
+
+.name-container {
+  display: flex;
+  gap: 12px;
+}
+.name-container h1 {
+  margin-bottom: 0;
+}
+
+.social-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0px;
+  gap: 8px;
+}
+
+.list-section h2 {
+  font-weight: 600;
+}
+.list-section h3,
+.list-section h4,
+.list-section p {
+  margin: 0;
+  padding: 0;
+}
+.list-section p {
+  margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 800px) {
+  main {
+    max-width: 100%;
+  }
+}

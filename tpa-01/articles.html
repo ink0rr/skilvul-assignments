@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Articles | Tomflynn Beltsazar</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="/">Home</a>
+        <a href="./profile.html">Profile</a>
+        <a href="./projects.html">Projects</a>
+        <a href="./articles.html">Acticles</a>
+      </nav>
+    </header>
+    <main>
+      <h1>Articles</h1>
+      <h2>Unfortunately, I don't have an article yet. So here are today's top 5 articles from dev.to:</h2>
+      <section></section>
+    </main>
+    <script>
+      const section = document.querySelector("section")
+      ;(async function () {
+        const res = await fetch("https://dev.to/api/articles?page=1&per_page=5&top=1")
+        const data = await res.json()
+        data.forEach(({ title, description, url }, i) => {
+          section.innerHTML += /*html*/ `
+            <article>
+              ${i ? `<hr/>` : `<br/>`}
+              <div>
+                <a href="${url}"><h3>${title}</h3></a>
+                <p>${description}</p>
+              </div>
+            </article>
+          `
+        })
+      })()
+    </script>
+  </body>
+</html>

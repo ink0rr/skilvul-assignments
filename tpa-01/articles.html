@@ -22,10 +22,10 @@
       <section></section>
     </main>
     <script>
-      const section = document.querySelector("section")
-      ;(async function () {
-        const res = await fetch("https://dev.to/api/articles?page=1&per_page=5&top=1")
-        const data = await res.json()
+      const section = document.querySelector("section");
+      (async function () {
+        const res = await fetch("https://dev.to/api/articles?page=1&per_page=5&top=1");
+        const data = await res.json();
         data.forEach(({ title, description, url }, i) => {
           section.innerHTML += /*html*/ `
             <article>
@@ -35,9 +35,9 @@
                 <p>${description}</p>
               </div>
             </article>
-          `
-        })
-      })()
+          `;
+        });
+      })();
     </script>
   </body>
 </html>

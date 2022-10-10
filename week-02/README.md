@@ -20,7 +20,7 @@ Function adalah sebuah blok kode yang bisa dipanggil berulang kali. Function bis
 
   ```js
   function sum(a, b) {
-    return a + b
+    return a + b;
   }
   ```
 
@@ -30,18 +30,18 @@ Function adalah sebuah blok kode yang bisa dipanggil berulang kali. Function bis
 
   ```js
   function sayHello() {
-    console.log("Hello")
+    console.log("Hello");
   }
 
-  sayHello() // Hello
+  sayHello(); // Hello
   ```
 
   ```js
   function sayHello(name) {
-    console.log("Hello " + name)
+    console.log("Hello " + name);
   }
 
-  sayHello("John") // Hello John
+  sayHello("John"); // Hello John
   ```
 
 - ### Return Value
@@ -50,12 +50,12 @@ Function adalah sebuah blok kode yang bisa dipanggil berulang kali. Function bis
 
   ```js
   function sum(a, b) {
-    return a + b
+    return a + b;
   }
 
-  let result = sum(1, 2)
-  console.log(result) // 3
-  console.log(sum(2, 3)) // 5
+  let result = sum(1, 2);
+  console.log(result); // 3
+  console.log(sum(2, 3)); // 5
   ```
 
 ## Scope
@@ -67,14 +67,14 @@ Scope adalah konsep dalam flow data variabel. Scope menentukan suatu variable bi
   Global scope berarti variabel bisa diakses dimana saja. Variabel yang berada di global scope bisa diakses di dalam function maupun di luar function.
 
   ```js
-  let message = "Hello"
+  let message = "Hello";
 
   function sayHello() {
-    console.log(message)
+    console.log(message);
   }
 
-  sayHello() // Hello
-  console.log(message) // Hello
+  sayHello(); // Hello
+  console.log(message); // Hello
   ```
 
 - ### Local Scope
@@ -83,12 +83,12 @@ Scope adalah konsep dalam flow data variabel. Scope menentukan suatu variable bi
 
   ```js
   function sayHello() {
-    let message = "Hello"
-    console.log(message)
+    let message = "Hello";
+    console.log(message);
   }
 
-  sayHello() // Hello
-  console.log(message) // ReferenceError: message is not defined
+  sayHello(); // Hello
+  console.log(message); // ReferenceError: message is not defined
   ```
 
 ## Built-in Method & Properties
@@ -142,7 +142,7 @@ Document Object Model atau DOM adalah interface yang disediakan oleh browser unt
     Mengambil elemen HTML berdasarkan id.
 
     ```js
-    let element = document.getElementById("id")
+    let element = document.getElementById("id");
     ```
 
   - #### getElementsByClassName
@@ -150,7 +150,7 @@ Document Object Model atau DOM adalah interface yang disediakan oleh browser unt
     Mengambil elemen HTML berdasarkan class.
 
     ```js
-    let elements = document.getElementsByClassName("class-name")
+    let elements = document.getElementsByClassName("class-name");
     ```
 
   - #### getElementsByTagName
@@ -158,7 +158,7 @@ Document Object Model atau DOM adalah interface yang disediakan oleh browser unt
     Mengambil elemen HTML berdasarkan tag.
 
     ```js
-    let elements = document.getElementsByTagName("h1")
+    let elements = document.getElementsByTagName("h1");
     ```
 
   - #### querySelector
@@ -166,9 +166,9 @@ Document Object Model atau DOM adalah interface yang disediakan oleh browser unt
     Mengambil elemen HTML berdasarkan CSS selector.
 
     ```js
-    let h1 = document.querySelector("h1") // mengambil elemen dengan tag h1
-    let p = document.querySelector(".paragraph") // mengambil elemen dengan class paragraph
-    let a = document.querySelector("#link") // mengambil elemen dengan id link
+    let h1 = document.querySelector("h1"); // mengambil elemen dengan tag h1
+    let p = document.querySelector(".paragraph"); // mengambil elemen dengan class paragraph
+    let a = document.querySelector("#link"); // mengambil elemen dengan id link
     ```
 
 - ### DOM Tree
@@ -186,7 +186,7 @@ Document Object Model atau DOM adalah interface yang disediakan oleh browser unt
   ```
 
   ```js
-  let container = document.getElementById("container")
+  let container = document.getElementById("container");
   ```
 
   - #### Element Node
@@ -194,7 +194,7 @@ Document Object Model atau DOM adalah interface yang disediakan oleh browser unt
     Element node adalah node yang merepresentasikan elemen HTML. Element node memiliki properti `tagName` yang berisi nama tag HTML.
 
     ```js
-    console.log(container.tagName) // DIV
+    console.log(container.tagName); // DIV
     ```
 
   - #### Text Node
@@ -202,7 +202,7 @@ Document Object Model atau DOM adalah interface yang disediakan oleh browser unt
     Text node adalah node yang merepresentasikan teks. Text node memiliki properti `textContent` yang berisi teks.
 
     ```js
-    console.log(container.textContent) // Hello
+    console.log(container.textContent); // Hello
     ```
 
   - #### Attribute Node
@@ -210,8 +210,8 @@ Document Object Model atau DOM adalah interface yang disediakan oleh browser unt
     Attribute node adalah node yang merepresentasikan atribut HTML. Attribute node memiliki properti `name` dan `value` yang berisi nama dan nilai atribut.
 
     ```js
-    console.log(container.getAttributeNode("id").name) // id
-    console.log(container.getAttributeNode("id").value) // container
+    console.log(container.getAttributeNode("id").name); // id
+    console.log(container.getAttributeNode("id").value); // container
     ```
 
   - #### Parent Node
@@ -219,7 +219,7 @@ Document Object Model atau DOM adalah interface yang disediakan oleh browser unt
     Parent node adalah node yang berada di atas node lain. Parent node bisa diakses melalui properti `parentNode`.
 
     ```js
-    console.log(container.parentNode.tagName) // BODY
+    console.log(container.parentNode.tagName); // BODY
     ```
 
   - #### Child Node
@@ -227,7 +227,7 @@ Document Object Model atau DOM adalah interface yang disediakan oleh browser unt
     Child node adalah node yang berada di bawah node lain. Child node bisa diakses melalui properti `childNodes`.
 
     ```js
-    console.log(container.childNodes[0].tagName) // P
+    console.log(container.childNodes[0].tagName); // P
     ```
 
 - ### DOM Manipulation
@@ -241,7 +241,7 @@ Document Object Model atau DOM adalah interface yang disediakan oleh browser unt
   ```
 
   ```js
-  let container = document.getElementById("container")
+  let container = document.getElementById("container");
   ```
 
   - #### Mengubah Properti Node
@@ -249,11 +249,11 @@ Document Object Model atau DOM adalah interface yang disediakan oleh browser unt
     Mengubah properti node bisa dilakukan dengan mengubah properti node secara langsung atau dengan menggunakan method-method yang disediakan oleh DOM API.
 
     ```js
-    container.textContent = "Hello World"
+    container.textContent = "Hello World";
     ```
 
     ```js
-    container.setAttribute("id", "container-1")
+    container.setAttribute("id", "container-1");
     ```
 
   - #### Menghapus dan Menambahkan Node
@@ -261,13 +261,13 @@ Document Object Model atau DOM adalah interface yang disediakan oleh browser unt
     Menghapus dan menambahkan node bisa dilakukan dengan menggunakan method-method yang disediakan oleh DOM API.
 
     ```js
-    container.removeChild(container.childNodes[0])
+    container.removeChild(container.childNodes[0]);
     ```
 
     ```js
-    let p = document.createElement("p")
-    p.textContent = "Hello World"
-    container.appendChild(p)
+    let p = document.createElement("p");
+    p.textContent = "Hello World";
+    container.appendChild(p);
     ```
 
 - ### DOM Event
@@ -292,8 +292,8 @@ Document Object Model atau DOM adalah interface yang disediakan oleh browser unt
 
     ```js
     button.addEventListener("click", () => {
-      console.log("Button clicked")
-    })
+      console.log("Button clicked");
+    });
     ```
 
   - #### Event Handler
@@ -302,8 +302,8 @@ Document Object Model atau DOM adalah interface yang disediakan oleh browser unt
 
     ```js
     button.onclick = () => {
-      console.log("Button clicked")
-    }
+      console.log("Button clicked");
+    };
     ```
 
   - #### Perbedaan Event Listener dan Event Handler
@@ -312,22 +312,22 @@ Document Object Model atau DOM adalah interface yang disediakan oleh browser unt
 
     ```js
     button.onclick = () => {
-      console.log("Event handler 1")
-    }
+      console.log("Event handler 1");
+    };
     button.onclick = () => {
-      console.log("Event handler 2")
-    }
+      console.log("Event handler 2");
+    };
     ```
 
     Ketika button diklik, hanya event handler 2 yang akan dijalankan.
 
     ```js
     button.addEventListener("click", () => {
-      console.log("Event listener 1")
-    })
+      console.log("Event listener 1");
+    });
     button.addEventListener("click", () => {
-      console.log("Event listener 2")
-    })
+      console.log("Event listener 2");
+    });
     ```
 
     Dengan menggunakan event listener, kedua event listener akan dijalankan ketika button diklik.
@@ -338,8 +338,8 @@ Document Object Model atau DOM adalah interface yang disediakan oleh browser unt
 
     ```js
     let handler = () => {
-      console.log("Button clicked")
-    }
-    button.addEventListener("click", handler)
-    button.removeEventListener("click", handler)
+      console.log("Button clicked");
+    };
+    button.addEventListener("click", handler);
+    button.removeEventListener("click", handler);
     ```

@@ -306,12 +306,12 @@ Algoritma adalah sederetan langkah-langkah logis yang disusun secara sistematis 
   - #### Javascript
 
     ```js
-    const n = prompt("Enter a number:")
+    const n = prompt("Enter a number:");
 
     if (n % 2 === 0) {
-      console.log("Genap")
+      console.log("Genap");
     } else {
-      console.log("Ganjil")
+      console.log("Ganjil");
     }
     ```
 
@@ -383,8 +383,8 @@ Javascript adalah bahasa pemrograman yang digunakan dalam pengembangan website a
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>Today's Date</title>
         <script>
-          const date = new Date()
-          alert("Today's date is " + date)
+          const date = new Date();
+          alert("Today's date is " + date);
         </script>
       </head>
       <body></body>
@@ -398,8 +398,8 @@ Javascript adalah bahasa pemrograman yang digunakan dalam pengembangan website a
     script.js
 
     ```js
-    const date = new Date()
-    alert("Today's date is " + date)
+    const date = new Date();
+    alert("Today's date is " + date);
     ```
 
     index.html
@@ -432,15 +432,15 @@ Javascript adalah bahasa pemrograman yang digunakan dalam pengembangan website a
   Contoh:
 
   ```js
-  let str = "Hi!" // string
-  let num = 4 // number
-  let flag = false // boolean
-  let x = null // null
-  let y // undefined
+  let str = "Hi!"; // string
+  let num = 4; // number
+  let flag = false; // boolean
+  let x = null; // null
+  let y; // undefined
   let person = {
     name: "John Doe",
     age: 20,
-  } // object
+  }; // object
   ```
 
 - ### Operator
@@ -452,7 +452,7 @@ Javascript adalah bahasa pemrograman yang digunakan dalam pengembangan website a
     Assignment operator digunakan untuk memberikan nilai kepada variabel.
 
     ```js
-    let name = "John Doe"
+    let name = "John Doe";
     ```
 
   - #### Arithmetic Operator
@@ -472,17 +472,17 @@ Javascript adalah bahasa pemrograman yang digunakan dalam pengembangan website a
     Perhatikan code dibawah
 
     ```js
-    let num = 12
-    num = num + 12 // 24
-    num = num - 4 // 20
+    let num = 12;
+    num = num + 12; // 24
+    num = num - 4; // 20
     ```
 
     Kita dapat mempersingkat penulisan code tersebut dengan menggunakan mathematical assignment operator
 
     ```js
-    let num = 12
-    num += 12 // 24
-    num -= 4 // 20
+    let num = 12;
+    num += 12; // 24
+    num -= 4; // 20
     ```
 
   - #### Increment dan Decrement
@@ -490,11 +490,11 @@ Javascript adalah bahasa pemrograman yang digunakan dalam pengembangan website a
     Menambah atau mengurangi sebesar 1 nilai
 
     ```js
-    let n = 10
-    n++
-    console.log(n) // 11
-    n--
-    console.log(n) // 10
+    let n = 10;
+    n++;
+    console.log(n); // 11
+    n--;
+    console.log(n); // 10
     ```
 
   - #### Comparison Operator
@@ -511,10 +511,10 @@ Javascript adalah bahasa pemrograman yang digunakan dalam pengembangan website a
     ```
 
     ```js
-    8 < 10 // true
-    10 < 1 // false
-    "apple" === "apple" // true
-    "apple" === "orange" // false
+    8 < 10; // true
+    10 < 1; // false
+    "apple" === "apple"; // true
+    "apple" === "orange"; // false
     ```
 
   - #### Logical Operator
@@ -529,23 +529,23 @@ Javascript adalah bahasa pemrograman yang digunakan dalam pengembangan website a
 
     ```js
     if (n > 10 && n % 2 === 0) {
-      console.log("n adalah bilangan genap yang bernilai lebih dari 10")
+      console.log("n adalah bilangan genap yang bernilai lebih dari 10");
     }
     ```
 
     ```js
     if (day === "Saturday" || day === "Sunday") {
-      console.log("Weekend")
+      console.log("Weekend");
     } else {
-      console.log("Weekday")
+      console.log("Weekday");
     }
     ```
 
     ```js
-    let a = true
-    console.log(!a) // false
-    let b = false
-    console.log(!b) // true
+    let a = true;
+    console.log(!a); // false
+    let b = false;
+    console.log(!b); // true
     ```
 
 - ### Conditional Statement
@@ -564,7 +564,7 @@ Javascript adalah bahasa pemrograman yang digunakan dalam pengembangan website a
 
     ```js
     if (x === 100) {
-      console.log("Nilai x adalah 100")
+      console.log("Nilai x adalah 100");
     }
     ```
 
@@ -572,9 +572,9 @@ Javascript adalah bahasa pemrograman yang digunakan dalam pengembangan website a
 
     ```js
     if (n % 2 === 0) {
-      console.log("Genap")
+      console.log("Genap");
     } else {
-      console.log("Ganjil")
+      console.log("Ganjil");
     }
     ```
 
@@ -582,13 +582,13 @@ Javascript adalah bahasa pemrograman yang digunakan dalam pengembangan website a
 
     ```js
     if (nilai >= 90) {
-      console.log("Grade: A")
+      console.log("Grade: A");
     } else if (nilai >= 80) {
-      console.log("Grade: B")
+      console.log("Grade: B");
     } else if (nilai >= 70) {
-      console.log("Grade: C")
+      console.log("Grade: C");
     } else {
-      console.log("Tidak lulus")
+      console.log("Tidak lulus");
     }
     ```
 
@@ -597,17 +597,17 @@ Javascript adalah bahasa pemrograman yang digunakan dalam pengembangan website a
     ```js
     switch (operator) {
       case "tambah":
-        console.log(a + b)
-        break
+        console.log(a + b);
+        break;
       case "kurang":
-        console.log(a - b)
-        break
+        console.log(a - b);
+        break;
       case "kali":
-        console.log(a * b)
-        break
+        console.log(a * b);
+        break;
       case "bagi":
-        console.log(a / b)
-        break
+        console.log(a / b);
+        break;
     }
     ```
 
@@ -631,7 +631,7 @@ Javascript adalah bahasa pemrograman yang digunakan dalam pengembangan website a
 
     ```js
     for (let i = 1; i <= 10; i++) {
-      console.log(i)
+      console.log(i);
     }
     ```
 
@@ -646,10 +646,10 @@ Javascript adalah bahasa pemrograman yang digunakan dalam pengembangan website a
     ```
 
     ```js
-    let i = 1
+    let i = 1;
     while (i <= 10) {
-      console.log(i)
-      i++
+      console.log(i);
+      i++;
     }
     ```
 
@@ -660,15 +660,15 @@ Javascript adalah bahasa pemrograman yang digunakan dalam pengembangan website a
     ```js
     do {
       // statement
-    } while (condition)
+    } while (condition);
     ```
 
     ```js
-    let n = 0
-    let sum = 0
+    let n = 0;
+    let sum = 0;
     do {
-      n = prompt("Enter a number: ")
-      sum += n
-    } while (n !== 0)
-    console.log(sum)
+      n = prompt("Enter a number: ");
+      sum += n;
+    } while (n !== 0);
+    console.log(sum);
     ```

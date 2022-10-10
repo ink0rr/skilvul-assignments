@@ -1,29 +1,25 @@
 import { getMovies } from "./lib/movies.js";
+import { formatDate } from "./utils/formatDate.js";
 import { getParams } from "./utils/getParams.js";
 
-const params = getParams(location.search);
+const params = getParams();
+const movies = await getMovies(params.query);
+const main = document.querySelector("main");
 
-document.getElementById("search").addEventListener("submit", (event) => {
-  event.preventDefault();
-  const data = new FormData(event.target);
-  const query = data.get("query");
-  location.search = `?query=${query}`;
-});
+movies.results.forEach((movie) => {
+  const { id, title, poster_path, release_date, vote_average } = movie;
+  const date = formatDate(release_date);
+  const score = parseFloat(vote_average).toFixed(1);
 
-// Load movies
-(async function () {
-  const movieList = document.querySelector(".movie-list");
-  const movies = await getMovies(params.query);
-  movies.results.forEach((movie) => {
-    const date = new Date(movie.release_date);
-
-    movieList.innerHTML += /*html*/ `
-      <a class="movie-container" href="movies/?id=${movie.id}">
-        <img class="movie-thumbnail" src="https://image.tmdb.org/t/p/w500${movie.poster_path}" />
-        <div class="movie-content">
-          <p>${movie.title}</p>
-          <p>${date.toDateString()}</p>
+  main.innerHTML += /*html*/ `
+    <a class="card" href="movies/?id=${id}">
+      <img class="thumbnail" src="https://image.tmdb.org/t/p/w500${poster_path}" alt="${title}" />
+      <div class="container">
+        <div class="header">
+          <p>${title}</p>
+          <p>⭐${score}</p>
         </div>
-      </a>`;
-  });
-})();
+        <p>${date}</p>
+      </div>
+    </a>`;
+});

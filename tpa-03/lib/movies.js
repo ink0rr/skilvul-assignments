@@ -8,3 +8,8 @@ export async function getMovies(search) {
   );
   return await res.json();
 }
+
+export async function getMovieDetail(id) {
+  const res = await fetch(`https://api.themoviedb.org/3/movie/${id}?api_key=${API_KEY}`);
+  return await res.json();
+}

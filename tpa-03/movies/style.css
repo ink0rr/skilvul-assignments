@@ -6,8 +6,16 @@ main h1 {
 }
 
 .poster {
-  width: 256px;
+  width: 32vw;
+  max-width: 256px;
   border-radius: 6px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
   margin-right: 24px;
+}
+
+@media screen and (max-width: 450px) {
+  main {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
 }

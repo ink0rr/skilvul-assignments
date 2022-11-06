@@ -1,0 +1,6 @@
+CREATE TABLE IF NOT EXISTS categories(
+    category_id INT NOT NULL AUTO_INCREMENT,
+    category_name VARCHAR(50) NOT NULL,
+    created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    PRIMARY KEY (category_id)
+);

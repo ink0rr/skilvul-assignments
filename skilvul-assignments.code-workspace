@@ -1,0 +1,42 @@
+{
+  "folders": [
+    {
+      "path": "tpa-01"
+    },
+    {
+      "path": "tpa-02"
+    },
+    {
+      "path": "tpa-03"
+    },
+    {
+      "path": "tpa-04"
+    },
+    {
+      "path": "tpa-05"
+    },
+    {
+      "path": "."
+    },
+  ],
+  "settings": {
+    "files.exclude": {
+      "tpa-*": true,
+    },
+    "sqltools.connections": [
+      {
+        "mysqlOptions": {
+          "authProtocol": "default"
+        },
+        "previewLimit": 50,
+        "server": "localhost",
+        "port": 3306,
+        "driver": "MySQL",
+        "name": "tpa-04",
+        "database": "tpa-04",
+        "username": "root",
+        "password": ""
+      }
+    ]
+  }
+}

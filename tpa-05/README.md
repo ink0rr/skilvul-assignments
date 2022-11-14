@@ -2,6 +2,8 @@
 
 ## API Endpoints
 
+Authentication token is stored in cookies.
+
 | Method | Endpoint             | Description          | Notes                   |
 | ------ | -------------------- | -------------------- | ----------------------- |
 | POST   | /api/auth/login      | Login                |                         |
@@ -10,10 +12,10 @@
 | GET    | /api/users           | Get all users        |                         |
 | GET    | /api/users/:username | Get user by username |                         |
 | GET    | /api/todos           | Get all todos        | Requires Authentication |
-| GET    | /api/todos/:id       | Get todo by id       | Requires Authentication |
+| GET    | /api/todos/:todoId   | Get todo by id       | Requires Authentication |
 | POST   | /api/todos           | Create todo          | Requires Authentication |
-| PUT    | /api/todos/:id       | Update todo          | Requires Authentication |
-| DELETE | /api/todos/:id       | Delete todo          | Requires Authentication |
+| PUT    | /api/todos/:todoId   | Update todo          | Requires Authentication |
+| DELETE | /api/todos/:todoId   | Delete todo          | Requires Authentication |
 
 ## Environment Variables
 
@@ -31,7 +33,3 @@ Install dependencies and run the dev command
 pnpm i
 pnpm run dev
 ```
-
-## Deployment
-
-https://tpa-05-ink0rr.vercel.app/

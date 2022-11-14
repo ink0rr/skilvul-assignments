@@ -14,7 +14,7 @@ Authentication token is stored in cookies.
 | GET    | /api/todos           | Get all todos        | Requires Authentication |
 | GET    | /api/todos/:todoId   | Get todo by id       | Requires Authentication |
 | POST   | /api/todos           | Create todo          | Requires Authentication |
-| PUT    | /api/todos/:todoId   | Update todo          | Requires Authentication |
+| PATCH  | /api/todos/:todoId   | Update todo          | Requires Authentication |
 | DELETE | /api/todos/:todoId   | Delete todo          | Requires Authentication |
 
 ## Environment Variables

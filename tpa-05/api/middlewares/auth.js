@@ -10,7 +10,7 @@ export async function authMiddleware(req, res, next) {
     if (typeof data === "object" && data.userId) {
       const user = await User.findById(data.userId);
       if (user) {
-        res.locals.data = data;
+        res.locals.token = data;
         return next();
       }
     }

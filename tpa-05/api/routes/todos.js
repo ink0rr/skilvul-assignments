@@ -9,6 +9,6 @@ todosRoute.get("/:todoId", TodoController.getById);
 
 todosRoute.post("/", TodoController.create);
 
-todosRoute.put("/:todoId", TodoController.update);
+todosRoute.patch("/:todoId", TodoController.update);
 
 todosRoute.delete("/:todoId", TodoController.remove);
